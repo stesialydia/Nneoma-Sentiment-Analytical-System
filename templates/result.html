@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('{{ url_for('static', filename='images/background.jpg') }}');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+        /* Content container */
+        .content {
+            max-width: 600px;
+            margin: 100px auto;
+            background-color: #53272c;
+            
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        .result {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .result p {
+            font-size: 1.2em;
+        }
+        .positive {
+            color: green;
+        }
+        .negative {
+            color: red;
+        }
+        .neutral {
+            color: gray;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Sentiment Analytical Result</h1>
+        <div class="result">
+            <p>The sentiment of the provided review is: <strong class="{{ sentiment_class }}">{{ sentiment }}</strong></p>
+            <p>Probability: {{ probability }}</p>
+            <button class="button" onclick="window.location.href='/'">Analyze Another Review</button>
+        </div>
+    </div>
+
+</body>
+</html>
