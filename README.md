@@ -1,12 +1,19 @@
-Sentiment Analytical System
-Overview
+**Sentiment Analytical System**
+
+**Overview**
 The Sentiment Analytical System is a machine learning project designed to analyse patient feedback on prescribed medication and classify sentiment to support improved patient satisfaction. The system helps identify whether patient reviews express positive or negative experiences, allowing healthcare teams, analysts, or decision-makers to better understand medication-related concerns and patient perceptions.
+
 This project compares two text classification models:
+
 Random Forest Classifier
 Naive Bayes Classifier
+
 After model evaluation, the Naive Bayes classifier was selected as the final model because it delivered better performance for the sentiment classification task. The trained model and vectorizer were saved using Pickle and deployed through a Flask web application.
-Project Objective
+
+**Project Objective**
+
 The main objective of this project is to build an NLP-based sentiment analysis system that can:
+
 Analyse patient medication reviews.
 Convert text reviews into machine-readable features.
 Classify sentiment as positive or negative.
