@@ -14,13 +14,14 @@ After model evaluation, the Naive Bayes classifier was selected as the final mod
 
 The main objective of this project is to build an NLP-based sentiment analysis system that can:
 
-Analyse patient medication reviews.
-Convert text reviews into machine-readable features.
-Classify sentiment as positive or negative.
-Compare the performance of Random Forest and Naive Bayes models.
-Deploy the best-performing model in a simple Flask application.
-Support data-driven understanding of patient satisfaction with medication.
-Key Features
+#Analyse patient medication reviews.
+#Convert text reviews into machine-readable features.
+#Classify sentiment as positive or negative.
+#Compare the performance of Random Forest and Naive Bayes models.
+#Deploy the best-performing model in a simple Flask application.
+#Support data-driven understanding of patient satisfaction with medication.
+
+**Key Features**
 Text cleaning and preprocessing
 Tokenization
 Stop-word removal
@@ -32,19 +33,22 @@ Model comparison between Random Forest and Naive Bayes
 Model evaluation using classification metrics
 Model and vectorizer serialization with Pickle
 Flask web app for sentiment prediction
-Tech Stack
+
+**Tech Stack**
 Python
 Pandas
 NumPy
 Scikit-learn
+NLP
 NLTK
 Flask
 Pickle
 HTML/CSS
-Machine Learning Workflow
+
+**Machine Learning Workflow**
 The project follows a complete NLP machine learning pipeline:
+
 Load the medication review dataset.
-Merge training and testing datasets where required.
 Clean and preprocess text data.
 Tokenize text reviews.
 Remove stop words.
